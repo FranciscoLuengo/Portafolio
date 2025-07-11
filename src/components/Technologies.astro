@@ -1,0 +1,160 @@
+<section id="skills" class="py-20">
+    <div class="container mx-auto px-6">
+        <h2
+            class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 bg-gradient-to-r from-white to-blue-600 bg-clip-text text-transparent text-center leading-snug"
+        >
+            Tecnologías
+        </h2>
+
+        <p class="text-muted-foreground md:text-lg leading-relaxed mb-8 text-blue-100 text-center">
+            Herramientas y tecnologías que domino
+        </p>
+
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img
+                            class="w-20 h-20 object-contain"
+                            src="assets/logos/angular-original.svg"
+                            alt="angular logo"
+                        />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img class="w-20 h-20 object-contain" src="assets/logos/react-original.svg" alt="react logo" />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img
+                            class="w-20 h-20 object-contain"
+                            src="assets/logos/typescript-original.svg"
+                            alt="typescript logo"
+                        />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img
+                            class="w-20 h-20 object-contain"
+                            src="assets/logos/javascript-original.svg"
+                            alt="javascript logo"
+                        />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img
+                            class="w-20 h-20 object-contain"
+                            src="assets/logos/docker-original.svg"
+                            alt="docker logo"
+                        />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img
+                            class="w-20 h-20 object-contain"
+                            src="assets/logos/express-original.svg"
+                            alt="express logo"
+                        />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img class="w-20 h-20 object-contain" src="assets/logos/git-original.svg" alt="git logo" />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img
+                            class="w-20 h-20 object-contain"
+                            src="assets/logos/github-original.svg"
+                            alt="github logo"
+                        />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img class="w-20 h-20 object-contain" src="assets/logos/mysql-original.svg" alt="mysql logo" />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img
+                            class="w-20 h-20 object-contain"
+                            src="assets/logos/nestjs-original.svg"
+                            alt="nestjs logo"
+                        />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img
+                            class="w-20 h-20 object-contain"
+                            src="assets/logos/nodejs-original.svg"
+                            alt="nodejs logo"
+                        />
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img
+                            class="w-20 h-20 object-contain"
+                            src="assets/logos/tailwindcss-original.svg"
+                            alt="tailwind logo"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .swiper {
+            padding: 20px 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper,
+        .swiper-wrapper,
+        .swiper-slide {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            -webkit-user-drag: none;
+            user-drag: none;
+        }
+    </style>
+
+    <script>
+        import Swiper from "swiper";
+        import "swiper/css";
+        import { Navigation, Autoplay } from "swiper/modules";
+        import "swiper/css/navigation";
+
+        new Swiper(".swiper", {
+            modules: [Navigation, Autoplay],
+            loop: true,
+            slidesPerView: "auto",
+            spaceBetween: 20,
+
+            speed: 800,
+
+            autoplay: {
+                delay: 100,
+
+                disableOnInteraction: false,
+            },
+            grabCursor: true,
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                },
+                480: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+                1024: {
+                    slidesPerView: 5,
+                },
+                1280: {
+                    slidesPerView: 6,
+                },
+            },
+        });
+    </script>
+</section>

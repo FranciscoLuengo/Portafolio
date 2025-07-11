@@ -1,0 +1,54 @@
+<header class="fixed w-full shadow-sm/6 shadow-white z-10 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+                <span
+                    class="font-bold text-xl bg-gradient-to-r from-white to-blue-600 bg-clip-text text-transparent select-none"
+                >
+                    Francisco Luengo
+                </span>
+            </a>
+            
+            <!-- Botón hamburguesa móvil -->
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle menu">
+                <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"
+                    ></path>
+                </svg>
+            </button>
+
+            <!-- Menú de navegación -->
+            <ul id="menu" class="hidden md:flex space-x-8 text-white">
+                <li><a href="#about" class="hover:text-blue-100 hover:drop-shadow-lg">Sobre mi</a></li>
+                <li><a href="#skills" class="hover:text-blue-100 hover:drop-shadow-lg">Tecnologías</a></li>
+                <li><a href="#projects" class="hover:text-blue-100 hover:drop-shadow-lg">Proyectos</a></li>
+                <li><a href="#contact" class="hover:text-blue-100 hover:drop-shadow-lg">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- Menú móvil desplegable -->
+        <ul id="menu-mobile" class="md:hidden hidden flex-col space-y-4 mt-4 text-white">
+            <li><a href="#about" class="block hover:text-blue-100">Sobre mi</a></li>
+            <li><a href="#skills" class="block hover:text-blue-100">Tecnologías</a></li>
+            <li><a href="#projects" class="block hover:text-blue-100">Proyectos</a></li>
+            <li><a href="#contact" class="block hover:text-blue-100">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const menuMobile = document.getElementById("menu-mobile");
+
+        if (menuBtn && menuMobile) {
+            menuBtn.addEventListener("click", () => {
+                menuMobile.classList.toggle("hidden");
+            });
+        }
+    </script>
+</header>
