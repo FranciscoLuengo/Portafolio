@@ -56,6 +56,6 @@ export const projects: Project[] = [
     description: "Una aplicación web moderna para rastrear y gestionar tus gastos personales de forma simple y efectiva.",
     tech: ["Next.js", "Tailwind", "TypeScript", "NextAuth.js", "Next,js API Routes", "Prisma", "PostgreSQL", "bcriptjs"],
     codeUrl: "https://github.com/FranciscoLuengo/GastoTracker",
-    demoUrl: "gasto-tracker.vercel.app",
+    demoUrl: "https://gasto-tracker.vercel.app/",
   },
 ];
