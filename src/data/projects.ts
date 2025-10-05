@@ -39,14 +39,14 @@ export const projects: Project[] = [
     codeUrl: "https://github.com/FranciscoLuengo",
     demoUrl: "https://youtube.com/shorts/SjdEJrrNlnY?feature=share",
   },
-  {
-    title: "Bot de ofertas informáticas",
-    image: "/assets/proyectos/discord_bot.png",
-    alt: "Bot ofertas Chiletrabajos",
-    description:
-      "Bot que informa sobre ofertas de trabajo del área informática en Chiletrabajos.",
-    tech: ["Python", "Discord Webhooks"],
-    codeUrl: "https://github.com/FranciscoLuengo/chiletrabajos_bot",
-    demoUrl: "https://discord.gg/bZ9qZEXFy7",
-  },
+  // {
+  //   title: "Bot de ofertas informáticas",
+  //   image: "/assets/proyectos/discord_bot.png",
+  //   alt: "Bot ofertas Chiletrabajos",
+  //   description:
+  //     "Bot que informa sobre ofertas de trabajo del área informática en Chiletrabajos.",
+  //   tech: ["Python", "Discord Webhooks"],
+  //   codeUrl: "https://github.com/FranciscoLuengo/chiletrabajos_bot",
+  //   demoUrl: "https://discord.gg/bZ9qZEXFy7",
+  // },
 ];
