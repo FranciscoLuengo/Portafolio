@@ -1,159 +1,176 @@
-<section id="skills" class="py-20">
+<section id="skills" class="py-20 overflow-hidden">
     <div class="container mx-auto px-6">
-        <h2
-            class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 bg-gradient-to-r from-white to-blue-600 bg-clip-text text-transparent text-center leading-snug"
-        >
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 bg-gradient-to-r from-white to-blue-600 bg-clip-text text-transparent text-center leading-snug">
             Tecnologías
         </h2>
 
-        <p class="text-muted-foreground md:text-lg leading-relaxed mb-8 text-blue-100 text-center">
+        <p class="text-muted-foreground md:text-lg leading-relaxed mb-12 text-blue-100 text-center">
             Herramientas y tecnologías que domino
         </p>
 
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide flex flex-col justify-center items-center gap-2">
-                        <img
-                            class="w-20 h-20 object-contain"
-                            src="assets/logos/angular-original.svg"
-                            alt="angular logo"
-                        />
-                        <div class="text-sm font-medium text-center text-white">
-                            Angular
+        <div class="relative max-w-6xl mx-auto">
+            <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-row" data-direction="right">
+                        <div class="tech-card">
+                            <img class="w-16 h-16 object-contain" src="assets/logos/angular-original.svg" alt="angular logo" />
+                            <span class="text-sm font-medium text-white mt-2">Angular</span>
+                        </div>
+                        <div class="tech-card">
+                            <img class="w-16 h-16 object-contain" src="assets/logos/react-original.svg" alt="react logo" />
+                            <span class="text-sm font-medium text-white mt-2">React</span>
+                        </div>
+                        <div class="tech-card">
+                            <img class="w-16 h-16 object-contain" src="assets/logos/nextjs.svg" alt="next logo" />
+                            <span class="text-sm font-medium text-white mt-2">Next.js</span>
+                        </div>
+                        <div class="tech-card">
+                            <img class="w-16 h-16 object-contain" src="assets/logos/tailwindcss-original.svg" alt="tailwind logo" />
+                            <span class="text-sm font-medium text-white mt-2">TailwindCSS</span>
+                        </div>
+                        <div class="tech-card">
+                            <img class="w-16 h-16 object-contain" src="assets/logos/typescript-original.svg" alt="typescript logo" />
+                            <span class="text-sm font-medium text-white mt-2">TypeScript</span>
+                        </div>
+                        <div class="tech-card">
+                            <img class="w-16 h-16 object-contain" src="assets/logos/javascript-original.svg" alt="javascript logo" />
+                            <span class="text-sm font-medium text-white mt-2">JavaScript</span>
+                        </div>
+                        <div class="tech-card">
+                            <img class="w-16 h-16 object-contain" src="assets/logos/nodejs-original.svg" alt="nodejs logo" />
+                            <span class="text-sm font-medium text-white mt-2">Node.js</span>
+                        </div>
+                        <!-- Duplicados para efecto infinito -->
+                        <div class="tech-card">
+                            <img class="w-16 h-16 object-contain" src="assets/logos/angular-original.svg" alt="angular logo" />
+                            <span class="text-sm font-medium text-white mt-2">Angular</span>
+                        </div>
+                        <div class="tech-card">
+                            <img class="w-16 h-16 object-contain" src="assets/logos/react-original.svg" alt="react logo" />
+                            <span class="text-sm font-medium text-white mt-2">React</span>
+                        </div>
+                        <div class="tech-card">
+                            <img class="w-16 h-16 object-contain" src="assets/logos/nextjs.svg" alt="next logo" />
+                            <span class="text-sm font-medium text-white mt-2">Next.js</span>
+                        </div>
+                        <div class="tech-card">
+                            <img class="w-16 h-16 object-contain" src="assets/logos/tailwindcss-original.svg" alt="tailwind logo" />
+                            <span class="text-sm font-medium text-white mt-2">TailwindCSS</span>
                         </div>
                     </div>
 
-                    <div class="swiper-slide flex flex-col justify-center items-center gap-2">
-                        <img class="w-20 h-20 object-contain" src="assets/logos/react-original.svg" alt="react logo" />
-                        <div class="text-sm font-medium text-center text-white">React</div>
-                    </div>
 
-                    <div class="swiper-slide flex flex-col justify-center items-center gap-2">
-                        <img class="w-20 h-20 object-contain" src="assets/logos/typescript-original.svg" alt="typescript logo" />
-                        <div class="text-sm font-medium text-center text-white">TypeScript</div>
-                    </div>
-
-                    <div class="swiper-slide flex flex-col justify-center items-center gap-2">
-                        <img class="w-20 h-20 object-contain" src="assets/logos/javascript-original.svg" alt="javascript logo" />
-                        <div class="text-sm font-medium text-center text-white">JavaScript</div>
-                    </div>
-
-                    <div class="swiper-slide flex flex-col justify-center items-center gap-2">
-                        <img class="w-20 h-20 object-contain" src="assets/logos/docker-original.svg" alt="docker logo" />
-                        <div class="text-sm font-medium text-center text-white">Docker</div>
-                    </div>
-
-                    <div class="swiper-slide flex flex-col justify-center items-center gap-2">
-                        <img class="w-20 h-20 object-contain" src="assets/logos/express-original.svg" alt="express logo" />
-                        <div class="text-sm font-medium text-center text-white">Express</div>
-                    </div>
-
-                    <div class="swiper-slide flex flex-col justify-center items-center gap-2">
-                        <img class="w-20 h-20 object-contain" src="assets/logos/git-original.svg" alt="git logo" />
-                        <div class="text-sm font-medium text-center text-white">Git</div>
-                    </div>
-
-                    <div class="swiper-slide flex flex-col justify-center items-center gap-2">
-                        <img class="w-20 h-20 object-contain" src="assets/logos/github-original.svg" alt="github logo" />
-                        <div class="text-sm font-medium text-center text-white">GitHub</div>
-                    </div>
-
-                    <div class="swiper-slide flex flex-col justify-center items-center gap-2">
-                        <img class="w-20 h-20 object-contain" src="assets/logos/mysql-original.svg" alt="mysql logo" />
-                        <div class="text-sm font-medium text-center text-white">MySQL</div>
-                    </div>
-
-                    <div class="swiper-slide flex flex-col justify-center items-center gap-2">
-                        <img class="w-20 h-20 object-contain" src="assets/logos/nestjs-original.svg" alt="nestjs logo" />
-                        <div class="text-sm font-medium text-center text-white">Nest JS</div>
-                    </div>
-
-                    <div class="swiper-slide flex flex-col justify-center items-center gap-2">
-                        <img class="w-20 h-20 object-contain" src="assets/logos/nodejs-original.svg" alt="nodejs logo" />
-                        <div class="text-sm font-medium text-center text-white">Node.js</div>
-                    </div>
-
-                    <div class="swiper-slide flex flex-col justify-center items-center gap-2">
-                        <img class="w-20 h-20 object-contain" src="assets/logos/tailwindcss-original.svg" alt="tailwind logo" />
-                        <div class="text-sm font-medium text-center text-white">TailwindCSS</div>
-                    </div>
                 </div>
+            </div>
         </div>
-</div>
-
     </div>
-
-    <style>
-        .swiper {
-            padding: 20px 0;
-            width: 100%;
-            height: 100%;
-            }
-
-        .swiper-slide {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100% !important;
-            width: auto !important;
-            padding: 10px 20px;           
-            box-sizing: border-box;
-        }
-
-        .swiper,
-        .swiper-wrapper,
-        .swiper-slide {
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-
-            -webkit-user-drag: none;
-            user-drag: none;
-        }
-
-    </style>
-
-    <script>
-        import Swiper from "swiper";
-        import "swiper/css";
-        import { Navigation, Autoplay } from "swiper/modules";
-        import "swiper/css/navigation";
-
-        new Swiper(".swiper", {
-            modules: [Navigation, Autoplay],
-            loop: true,
-            slidesPerView: "auto",
-            spaceBetween: 20,
-
-            speed: 800,
-
-            autoplay: {
-                delay: 100,
-
-                disableOnInteraction: false,
-            },
-            grabCursor: true,
-
-            breakpoints: {
-                320: {
-                    slidesPerView: 2,
-                },
-                480: {
-                    slidesPerView: 3,
-                },
-                768: {
-                    slidesPerView: 4,
-                },
-                1024: {
-                    slidesPerView: 5,
-                },
-                1280: {
-                    slidesPerView: 6,
-                },
-            },
-        });
-    </script>
 </section>
+
+<style>
+    .carousel-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel-track {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .carousel-row {
+        display: flex;
+        gap: 2rem;
+        animation: scroll 30s linear infinite;
+        width: fit-content;
+    }
+
+    .carousel-row[data-direction="left"] {
+        animation: scroll-left 30s linear infinite;
+    }
+
+    .carousel-row:hover {
+        animation-play-state: paused;
+    }
+
+    .tech-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        background: rgba(30, 41, 59, 0.1);
+        border: 1px solid rgba(59, 130, 246, 0.2);
+        border-radius: 1rem;
+        min-width: 140px;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+    }
+
+    .tech-card:hover {
+        transform: translateY(-8px) scale(1.05);
+        background: rgba(30, 41, 59, 0.8);
+        border-color: rgba(59, 130, 246, 0.5);
+        box-shadow: 0 10px 40px rgba(59, 130, 246, 0.3);
+    }
+
+    .tech-card img {
+        filter: drop-shadow(0 4px 8px rgba(59, 130, 246, 0.2));
+        transition: filter 0.3s ease;
+    }
+
+    .tech-card:hover img {
+        filter: drop-shadow(0 8px 16px rgba(59, 130, 246, 0.4));
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(-50%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .carousel-row {
+            gap: 1rem;
+        }
+
+        .tech-card {
+            min-width: 100px;
+            padding: 1rem;
+        }
+
+        .tech-card img {
+            width: 3rem !important;
+            height: 3rem !important;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const rows = document.querySelectorAll('.carousel-row');
+        
+        rows.forEach(row => {
+            const items = row.querySelectorAll('.tech-card');
+            items.forEach(item => {
+                const clone = item.cloneNode(true);
+                row.appendChild(clone);
+            });
+        });
+    });
+</script>
