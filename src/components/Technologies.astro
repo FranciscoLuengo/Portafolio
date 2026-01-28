@@ -1,176 +1,279 @@
-<section id="skills" class="py-20 overflow-hidden">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 bg-gradient-to-r from-white to-blue-600 bg-clip-text text-transparent text-center leading-snug">
-            Tecnologías
-        </h2>
+---
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/free-mode";
+---
 
-        <p class="text-muted-foreground md:text-lg leading-relaxed mb-12 text-blue-100 text-center">
-            Herramientas y tecnologías que domino
-        </p>
+<section id="skills" class="py-20 overflow-hidden relative group">
+  <div class="container mx-auto px-6">
+    <h2
+      class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 bg-gradient-to-r from-white to-blue-600 bg-clip-text text-transparent text-center leading-snug"
+    >
+      Tecnologías
+    </h2>
 
-        <div class="relative max-w-6xl mx-auto">
-            <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
-            <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+    <p
+      class="text-muted-foreground md:text-lg leading-relaxed mb-12 text-blue-100 text-center"
+    >
+      Herramientas y tecnologías que domino
+    </p>
 
-            <div class="carousel-container">
-                <div class="carousel-track">
-                    <div class="carousel-row" data-direction="right">
-                        <div class="tech-card">
-                            <img class="w-16 h-16 object-contain" src="assets/logos/angular-original.svg" alt="angular logo" />
-                            <span class="text-sm font-medium text-white mt-2">Angular</span>
-                        </div>
-                        <div class="tech-card">
-                            <img class="w-16 h-16 object-contain" src="assets/logos/react-original.svg" alt="react logo" />
-                            <span class="text-sm font-medium text-white mt-2">React</span>
-                        </div>
-                        <div class="tech-card">
-                            <img class="w-16 h-16 object-contain" src="assets/logos/nextjs.svg" alt="next logo" />
-                            <span class="text-sm font-medium text-white mt-2">Next.js</span>
-                        </div>
-                        <div class="tech-card">
-                            <img class="w-16 h-16 object-contain" src="assets/logos/tailwindcss-original.svg" alt="tailwind logo" />
-                            <span class="text-sm font-medium text-white mt-2">TailwindCSS</span>
-                        </div>
-                        <div class="tech-card">
-                            <img class="w-16 h-16 object-contain" src="assets/logos/typescript-original.svg" alt="typescript logo" />
-                            <span class="text-sm font-medium text-white mt-2">TypeScript</span>
-                        </div>
-                        <div class="tech-card">
-                            <img class="w-16 h-16 object-contain" src="assets/logos/javascript-original.svg" alt="javascript logo" />
-                            <span class="text-sm font-medium text-white mt-2">JavaScript</span>
-                        </div>
-                        <div class="tech-card">
-                            <img class="w-16 h-16 object-contain" src="assets/logos/nodejs-original.svg" alt="nodejs logo" />
-                            <span class="text-sm font-medium text-white mt-2">Node.js</span>
-                        </div>
-                        <!-- Duplicados para efecto infinito -->
-                        <div class="tech-card">
-                            <img class="w-16 h-16 object-contain" src="assets/logos/angular-original.svg" alt="angular logo" />
-                            <span class="text-sm font-medium text-white mt-2">Angular</span>
-                        </div>
-                        <div class="tech-card">
-                            <img class="w-16 h-16 object-contain" src="assets/logos/react-original.svg" alt="react logo" />
-                            <span class="text-sm font-medium text-white mt-2">React</span>
-                        </div>
-                        <div class="tech-card">
-                            <img class="w-16 h-16 object-contain" src="assets/logos/nextjs.svg" alt="next logo" />
-                            <span class="text-sm font-medium text-white mt-2">Next.js</span>
-                        </div>
-                        <div class="tech-card">
-                            <img class="w-16 h-16 object-contain" src="assets/logos/tailwindcss-original.svg" alt="tailwind logo" />
-                            <span class="text-sm font-medium text-white mt-2">TailwindCSS</span>
-                        </div>
+    <div class="relative max-w-full mx-auto">
+      <!-- Swiper Container -->
+      <div class="swiper technologies-swiper !py-14 !px-4 select-none">
+        <div class="swiper-wrapper transition-timing-linear">
+          {
+            [
+              {
+                name: "Angular",
+                icon: "assets/logos/angular-original.svg",
+                color: "#DD0031",
+              },
+              {
+                name: "React",
+                icon: "assets/logos/react-original.svg",
+                color: "#61DAFB",
+              },
+              {
+                name: "Next.js",
+                icon: "assets/logos/nextjs.svg",
+                color: "#ffffff",
+              },
+              {
+                name: "TailwindCSS",
+                icon: "assets/logos/tailwindcss-original.svg",
+                color: "#38B2AC",
+              },
+              {
+                name: "TypeScript",
+                icon: "assets/logos/typescript-original.svg",
+                color: "#3178C6",
+              },
+              {
+                name: "JavaScript",
+                icon: "assets/logos/javascript-original.svg",
+                color: "#F7DF1E",
+              },
+              {
+                name: "Node.js",
+                icon: "assets/logos/nodejs-original.svg",
+                color: "#339933",
+              },
+              {
+                name: "HTML5",
+                icon: "assets/logos/html5-original.svg",
+                color: "#E34F26",
+              },
+              {
+                name: "CSS3",
+                icon: "assets/logos/css3-original.svg",
+                color: "#1572B6",
+              },
+              {
+                name: "NestJS",
+                icon: "assets/logos/nestjs-original.svg",
+                color: "#E0234E",
+              },
+              {
+                name: "Docker",
+                icon: "assets/logos/docker-original.svg",
+                color: "#2496ED",
+              },
+              {
+                name: "Git",
+                icon: "assets/logos/git-original.svg",
+                color: "#F05032",
+              },
+              {
+                name: "GitHub",
+                icon: "assets/logos/github-original.svg",
+                color: "#ffffff",
+              },
+              {
+                name: "MySQL",
+                icon: "assets/logos/mysql-original.svg",
+                color: "#4479A1",
+              },
+              {
+                name: "Express",
+                icon: "assets/logos/express-original.svg",
+                color: "#ffffff",
+              },
+              // Duplicates for seamless loop
+              {
+                name: "Angular",
+                icon: "assets/logos/angular-original.svg",
+                color: "#DD0031",
+              },
+              {
+                name: "React",
+                icon: "assets/logos/react-original.svg",
+                color: "#61DAFB",
+              },
+              {
+                name: "Next.js",
+                icon: "assets/logos/nextjs.svg",
+                color: "#ffffff",
+              },
+              {
+                name: "TailwindCSS",
+                icon: "assets/logos/tailwindcss-original.svg",
+                color: "#38B2AC",
+              },
+              {
+                name: "TypeScript",
+                icon: "assets/logos/typescript-original.svg",
+                color: "#3178C6",
+              },
+              {
+                name: "JavaScript",
+                icon: "assets/logos/javascript-original.svg",
+                color: "#F7DF1E",
+              },
+              {
+                name: "Node.js",
+                icon: "assets/logos/nodejs-original.svg",
+                color: "#339933",
+              },
+              {
+                name: "HTML5",
+                icon: "assets/logos/html5-original.svg",
+                color: "#E34F26",
+              },
+              {
+                name: "CSS3",
+                icon: "assets/logos/css3-original.svg",
+                color: "#1572B6",
+              },
+              {
+                name: "NestJS",
+                icon: "assets/logos/nestjs-original.svg",
+                color: "#E0234E",
+              },
+              {
+                name: "Docker",
+                icon: "assets/logos/docker-original.svg",
+                color: "#2496ED",
+              },
+              {
+                name: "Git",
+                icon: "assets/logos/git-original.svg",
+                color: "#F05032",
+              },
+              {
+                name: "GitHub",
+                icon: "assets/logos/github-original.svg",
+                color: "#ffffff",
+              },
+              {
+                name: "MySQL",
+                icon: "assets/logos/mysql-original.svg",
+                color: "#4479A1",
+              },
+              {
+                name: "Express",
+                icon: "assets/logos/express-original.svg",
+                color: "#ffffff",
+              },
+            ].map((tech) => (
+              <div class="swiper-slide !w-auto !h-auto">
+                <div
+                  class="tech-card group relative overflow-hidden"
+                  style={`--glow-color: ${tech.color}`}
+                >
+                  <div class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
+
+                  <div class="relative z-10 flex flex-col items-center justify-center h-full">
+                    <div class="relative transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
+                      <div
+                        class="absolute inset-0 opacity-0 group-hover:opacity-50 blur-xl transition-all duration-500"
+                        style={`background-color: ${tech.color}`}
+                      />
+                      <img
+                        class="w-20 h-20 object-contain drop-shadow-lg relative z-10"
+                        src={tech.icon}
+                        alt={`${tech.name} logo`}
+                        loading="lazy"
+                      />
                     </div>
-
-
+                    <span class="text-base font-bold text-white/80 mt-4 tracking-wide group-hover:text-white transition-colors duration-300">
+                      {tech.name}
+                    </span>
+                  </div>
                 </div>
-            </div>
+              </div>
+            ))
+          }
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <style>
-    .carousel-container {
-        width: 100%;
-        overflow: hidden;
-    }
+  .tech-card {
+    width: 180px;
+    height: 200px;
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 1.5rem;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.2);
+  }
 
-    .carousel-track {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
+  .tech-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--glow-color, rgba(255, 255, 255, 0.2));
+    box-shadow:
+      0 14px 40px -10px rgba(0, 0, 0, 0.5),
+      0 0 20px -5px var(--glow-color, rgba(255, 255, 255, 0.1));
+  }
 
-    .carousel-row {
-        display: flex;
-        gap: 2rem;
-        animation: scroll 30s linear infinite;
-        width: fit-content;
-    }
-
-    .carousel-row[data-direction="left"] {
-        animation: scroll-left 30s linear infinite;
-    }
-
-    .carousel-row:hover {
-        animation-play-state: paused;
-    }
-
-    .tech-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1.5rem;
-        background: rgba(30, 41, 59, 0.1);
-        border: 1px solid rgba(59, 130, 246, 0.2);
-        border-radius: 1rem;
-        min-width: 140px;
-        transition: all 0.3s ease;
-        backdrop-filter: blur(10px);
-    }
-
-    .tech-card:hover {
-        transform: translateY(-8px) scale(1.05);
-        background: rgba(30, 41, 59, 0.8);
-        border-color: rgba(59, 130, 246, 0.5);
-        box-shadow: 0 10px 40px rgba(59, 130, 246, 0.3);
-    }
-
-    .tech-card img {
-        filter: drop-shadow(0 4px 8px rgba(59, 130, 246, 0.2));
-        transition: filter 0.3s ease;
-    }
-
-    .tech-card:hover img {
-        filter: drop-shadow(0 8px 16px rgba(59, 130, 246, 0.4));
-    }
-
-    @keyframes scroll {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-50%);
-        }
-    }
-
-    @keyframes scroll-left {
-        0% {
-            transform: translateX(-50%);
-        }
-        100% {
-            transform: translateX(0);
-        }
-    }
-
-    @media (max-width: 768px) {
-        .carousel-row {
-            gap: 1rem;
-        }
-
-        .tech-card {
-            min-width: 100px;
-            padding: 1rem;
-        }
-
-        .tech-card img {
-            width: 3rem !important;
-            height: 3rem !important;
-        }
-    }
+  :global(.swiper-wrapper) {
+    transition-timing-function: linear !important;
+  }
 </style>
 
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const rows = document.querySelectorAll('.carousel-row');
-        
-        rows.forEach(row => {
-            const items = row.querySelectorAll('.tech-card');
-            items.forEach(item => {
-                const clone = item.cloneNode(true);
-                row.appendChild(clone);
-            });
-        });
+  import Swiper from "swiper";
+  import { Autoplay, FreeMode } from "swiper/modules";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const swiper = new Swiper(".technologies-swiper", {
+      modules: [Autoplay, FreeMode],
+      loop: true,
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      speed: 4000,
+      freeMode: {
+        enabled: true,
+        momentum: false,
+      },
+      grabCursor: true,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: false,
+      },
+      breakpoints: {
+        320: {
+          spaceBetween: 20,
+        },
+        768: {
+          spaceBetween: 40,
+        },
+      },
+      on: {
+        touchEnd: (s) => {
+          s.autoplay.start();
+        },
+        sliderMove: (s) => {},
+        click: (s) => {
+          s.autoplay.start();
+        },
+      },
     });
+  });
 </script>
